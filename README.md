@@ -1,4 +1,4 @@
-# Hi guys, welcome to my website
+# Hi guys, Welcome to My Personal Website.
 
 ## Project info
 
