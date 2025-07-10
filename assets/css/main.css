@@ -1146,3 +1146,38 @@ body.light-mode .theme-toggle {
 body.light-mode .theme-toggle:hover {
   background-color: #555555;
 }
+
+.map-container {
+  background-color: var(--surface-color);
+  padding: 2rem;
+  border-radius: 2rem; /* More rounded */
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 75%; /* 4:3 aspect ratio */
+  border-radius: 1.5rem; /* More rounded */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 1.5rem; /* More rounded */
+}
+
+body.light-mode .map-container {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+body.light-mode .map-container h3 {
+  color: #333333;
+}
