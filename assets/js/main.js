@@ -247,16 +247,18 @@
   });
 
   /**
-   * Dark/Light Mode Toggle
+   * Dark/Light Mode Toggle with Navigation Fix
    */
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
   const icon = themeToggle.querySelector('i');
+  const header = document.querySelector('#header');
 
   // Check for saved theme preference or default to dark mode
   const currentTheme = localStorage.getItem('theme') || 'dark';
   if (currentTheme === 'light') {
     body.classList.add('light-mode');
+    header.classList.add('light-mode');
     icon.classList.remove('bi-moon-fill');
     icon.classList.add('bi-sun-fill');
   }
@@ -264,6 +266,7 @@
   // Toggle theme function
   function toggleTheme() {
     body.classList.toggle('light-mode');
+    header.classList.toggle('light-mode');
     
     // Update icon
     if (body.classList.contains('light-mode')) {
