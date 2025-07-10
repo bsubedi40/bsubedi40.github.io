@@ -1094,3 +1094,55 @@ body.light-mode .contact .contact-form .form-control {
 body.light-mode .contact .contact-form .form-control::placeholder {
   color: #666;
 }
+
+/* Light mode navigation styles */
+body.light-mode .header {
+  --background-color: #ffffff;
+  --nav-color: #333333;
+  --nav-hover-color: #9b805a;
+}
+
+body.light-mode .header .header-container {
+  background-color: #ffffff;
+  border-color: color-mix(in srgb, #333333, transparent 80%);
+}
+
+body.light-mode .navmenu a {
+  color: #333333;
+}
+
+body.light-mode .navmenu a:hover {
+  color: #9b805a;
+}
+
+body.light-mode .navmenu a.active {
+  color: #9b805a;
+  background-color: color-mix(in srgb, #9b805a, transparent 85%);
+}
+
+body.light-mode .navmenu a .navicon {
+  color: #666666;
+}
+
+body.light-mode .navmenu a:hover .navicon {
+  color: #9b805a;
+}
+
+body.light-mode .header .social-links a {
+  background: color-mix(in srgb, #333333, transparent 90%);
+  color: #333333;
+}
+
+body.light-mode .header .social-links a:hover {
+  background: #9b805a;
+  color: #ffffff;
+}
+
+body.light-mode .theme-toggle {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.light-mode .theme-toggle:hover {
+  background-color: #555555;
+}
