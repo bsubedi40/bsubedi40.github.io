@@ -1150,7 +1150,7 @@ body.light-mode .theme-toggle:hover {
 .map-container {
   background-color: var(--surface-color);
   padding: 2rem;
-  border-radius: 1rem; /* More rounded */
+  border-radius: 0rem; /* More rounded */
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
